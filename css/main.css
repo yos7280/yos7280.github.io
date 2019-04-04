@@ -1,0 +1,284 @@
+/* Header */
+.header{
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+.header h1{
+  padding: 38px 0 38px 14px;
+}
+.header h1 a{
+  display: inline-block;
+}
+.header h1 img{
+  max-width: 192px;
+}
+
+/* Nav */
+.nav{
+  position: absolute;
+  top:50px;
+  right: 0;
+}
+.nav::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav a{
+  display: inline-block;
+  float: left;
+  padding: 0 14px;
+  color: #2f323a;
+  font-size: 16px ;
+  font-weight: bold;
+  font-family: "";
+}
+
+/* Main Contents */
+.main{
+  width: 960px;
+  margin: 0 auto 110px;
+  text-align: center;
+}
+.main section,
+.main article,
+.main section div{
+  position: relative;
+}
+.main section::after,
+.main article::after,
+.main section div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.main span{
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size:5.6640625vw;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.main span strong{
+  display: inline-block;
+  width: 100%;
+  /* padding-bottom: 4vw; */
+  color: inherit;
+  font-size:inherit;
+}
+.main span a{
+  display: inline-block;
+  min-width: 120px;
+  min-height: 40px;
+  border-radius:40px;
+  border:2px solid rgba(255,255,255,.5);
+  line-height: 40px;
+  color: inherit;
+  font-size: 14px;
+  -webkit-border-radius:40px;
+  -moz-border-radius:40px;
+  -ms-border-radius:40px;
+  -o-border-radius:40px;
+}
+.about{
+  height: 492px;
+  margin-bottom: 1%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../image/hero.jpg);
+}
+.portfolio{
+  margin-bottom: 1%;
+}
+.portfolio article{
+  float: left;
+  width: 49.5%;
+  height: 305px;
+  background-color: #b9a88e;
+}
+.portfolio article:last-child{
+  float: right;
+  background-color: #2d2d35;
+}
+.portfolio span{
+  font-size: 3.515625vw;
+}
+.portfolio span a{
+  min-width: 100px;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.skill{
+  
+}
+.skill span{
+  font-size: 2.34375vw;
+}
+.skill span a{
+  min-width: 90px;
+  min-height: 25px;
+  line-height:25px;
+  font-size: 12px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.skill article{
+  float: left;
+  width: 49.5%;
+}
+.skill article:last-child{
+  float: right;
+}
+.skill article div{
+  float: left;
+  width: 49%;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.skill article div:last-child{
+  float: right;
+}
+
+/* 첫번째 방법
+ .skill article:first-child div:first-child{
+  background-image: url(../image/gallery-1.jpg);
+}
+.skill article:first-child div:last-child{
+  background-image: url(../image/gallery-2.jpg);
+}
+.skill article:last-child div:first-child{
+  background-image: url(../image/gallery-3.jpg);
+}
+.skill article:last-child div:last-child{
+  background-image: url(../image/gallery-4.jpg);
+} */
+.skill article:nth-child(1) div:nth-child(1){
+  background-image: url(../image/gallery-1.jpg);
+}
+.skill article:nth-child(1) div:nth-child(2){
+  background-image: url(../image/gallery-2.jpg);
+}
+.skill article:nth-child(2) div:nth-child(1){
+  background-image: url(../image/gallery-3.jpg);
+}
+.skill article:nth-child(2) div:nth-child(2){
+  background-image: url(../image/gallery-4.jpg);
+}
+
+/* Footer */
+.footerwrap{
+  background-color: #dbecf1;
+}
+.footer{
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 38px 14px;
+}
+.footer .sns{
+  position: absolute;
+  top:38px;
+  right: 14px;
+  text-align: center;
+}
+.footer .sns a{
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .sns a:last-child img{
+  position: relative;
+  top:1px;
+}
+.footer .sns img{
+
+}
+.footer address{
+  margin-bottom: 10px;
+  font-size:13px;
+  color: #708287;
+}
+.footer .copy{
+  font-size:13px;
+  color: #708287;
+}
+
+
+
+@media (max-width:959px){
+  body{
+    padding: 0 15px;
+  }
+  /* Header */
+  .header{
+    width: 100%;
+    text-align: center;
+  }
+  .header h1{
+    padding: 3.7109375vw 0 2vw;
+  }
+  .header h1 img{
+    width: 18.75vw;
+  }
+  .nav{
+    position: static;
+    width: 100%;
+    margin-bottom: 2vw;
+  }
+  .nav a{
+    width: calc(100% / 3);
+    padding: 14px;
+    text-align: center;
+  }
+
+  /* Main Contents */
+  .main{
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footerwrap{
+    margin: 0 -15px;
+  }
+  .footer{
+    width: 100%;
+    padding: 3.7109375vw 0;
+    text-align: center;
+  }
+  .footer .sns{
+    position: static;
+    margin-bottom: 2vh;
+  }
+  .main{
+    width: 100%;
+  }
+  .about{
+    height:48.046875vw
+  }
+  .portfolio article{
+
+  }
+  
+}
+/* aritle/last-child float:none 밑으로 떨어뜨리기. 
+.skill aticle : margin-top:1%;
+
+airtle div{width:49.5%}
+padding값도 줄이기*/
